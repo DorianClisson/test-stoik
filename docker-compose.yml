@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+    stoik-mongo:
+        container_name: stoik-mongo
+        image: mongo:7.0.2
+        command: --port 8089
+        ports:
+            - "8089:8089"
+        restart: always
